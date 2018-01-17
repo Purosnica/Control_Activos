@@ -1,0 +1,43 @@
+
+.sangrias{
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.marco-centrado{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.ancho-grande{
+  width: 100%;
+}
+
+.espaciado{
+  margin-right: 20px;
+}
+
+.subcontenido{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.tamano{
+width: 35%;
+}
+
+.centro{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
