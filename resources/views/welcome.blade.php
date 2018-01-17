@@ -1,148 +1,119 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/nemecio/css/mdb.css" rel="stylesheet">
+    <link href="css/nemecio/css/style.css" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+</head>
+<body style ="background-color:#48476E;">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+  <style>
 
-            .full-height {
-                height: 100vh;
-            }
+  .form-dark .font-small {
+  font-size: 1.8rem; }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+  .form-dark [type="radio"] + label,
+  .form-dark [type="checkbox"] + label {
+  font-size: 0.8rem; }
 
-            .position-ref {
-                position: relative;
-            }
+  .form-dark [type="checkbox"] + label:before {
+  top: 2px;
+  width: 15px;
+  height: 15px; }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+  .form-dark .md-form label {
+  color: #ffffff; }
 
-            .content {
-                text-align: center;
-            }
+  .form-dark input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851; }
 
-            .title {
-                font-size: 84px;
-            }
+  .form-dark input[type=text]:focus:not([readonly]) + label {
+  color: #ffffff; }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+  .form-dark input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851; }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
+  .form-dark input[type=password]:focus:not([readonly]) + label {
+  color: #ffffff; }
 
+  .form-dark input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  z-index: 0;
+  border: 1.5px solid #fff;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
 
+  .form-dark input[type="checkbox"]:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 12px;
+  height: 22px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent #00c851 #00c851 transparent;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+  </style>
+<div  class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div style="margin-top:200px;" class="panel panel-default">
+                <div  class="panel-body">
+<!--Section: Live preview-->
+                      <section  class="form-dark">
+<!--Form without header-->
+        <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table7.jpg');">
+                <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+   <!--Header-->
+                              <div class="text-center">
+                                <img src="css/bcie.png" width="68" height="68" alt="User" />
+                              <h3 class="white-text mb-5 mt-4 font-bold"><strong>BIENVENIDOS AL BANCO CENTROAMERICANO DE INTEGRACION ECONOMICA</strong></h3>
+                              </div>
 
-      <div id="app">
-       <nav class="navbar navbar-default navbar-static-top">
-           <div class="container">
-               <div class="navbar-header">
+                        <form >
+                        {{ csrf_field() }}
+                          <div class="row d-flex align-items-center mb-4">
+                          <div class="text-center mb-3 col-md-12">
+                          <a href="{{ route('login') }}" class="green-text ml-1 font-bold"> <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">ENTRAR</button></a>
+                          </div>
 
-                   <!-- Collapsed Hamburger -->
-                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                       <span class="sr-only">Toggle Navigation</span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                   </button>
-
-                   <!-- Branding Image -->
-                   <a class="navbar-brand" href="{{ url('/') }}">
-                       {{ config('app.name', 'Laravel') }}
-                   </a>
-               </div>
-
-               <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                   <!-- Left Side Of Navbar -->
-                   <ul class="nav navbar-nav">
-                       &nbsp;
-                   </ul>
-
-                   <!-- Right Side Of Navbar -->
-                   <ul class="nav navbar-nav navbar-right">
-                       <!-- Authentication Links -->
-                       @guest
-                           <li><a href="{{ route('login') }}">Login</a></li>
-                           <li><a href="{{ route('register') }}">Register</a></li>
-                       @else
-                           <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                   {{ Auth::user()->name }} <span class="caret"></span>
-                               </a>
-
-                               <ul class="dropdown-menu">
-                                   <li>
-                                       <a href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                           Logout
-                                       </a>
-
-                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                           {{ csrf_field() }}
-                                       </form>
-                                   </li>
-                               </ul>
-                           </li>
-                       @endguest
-                   </ul>
-               </div>
-           </div>
-       </nav>
-
-       @yield('content')
-   </div>
-        <div class="flex-center position-ref full-height">
-
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                            </div>
+                          </form>
+        </section>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</div>
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+<script src="css/nemecio/js/popper.min.js"></script>
+<script src="css/nemecio/js/mdb.js"></script>
+<script src="css/nemecio/js/jquery-3.2.1.min.js">  </script>
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
 </html>

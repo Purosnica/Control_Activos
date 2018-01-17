@@ -81,26 +81,24 @@
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
 
-
   </style>
-
 
 <div  class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div style="margin-top:200px;" class="panel panel-default">
                 <div  class="panel-body">
-<!--Section: Live preview-->
+
                       <section  class="form-dark">
-<!--Form without header-->
+
         <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table7.jpg');">
                 <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-   <!--Header-->
+
                               <div class="text-center">
                                 <img src="css/bcie.png" width="68" height="68" alt="User" />
-                              <h3 class="white-text mb-5 mt-4 font-bold"><strong>SIGN</strong> <a class="green-text font-bold"><strong> UP</strong></a></h3>
+                              <h3 class="white-text mb-5 mt-4 font-bold"><strong>INICIO DE</strong> <a class="green-text font-bold"><strong> SESION</strong></a></h3>
                               </div>
-   <!--Body-->
+
                         <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
@@ -127,28 +125,23 @@
                           @endif
                           <label for="defaultForm-pass">Contraseña</label>
                         </div>
-   <!--Grid row-->
+
                           <div class="row d-flex align-items-center mb-4">
-       <!--Grid column-->
+
                           <div class="text-center mb-3 col-md-12">
                             <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Sign in</button>
                           </div>
-       <!--Grid column-->
+
                             </div>
                           </form>
-   <!--Grid row-->
-   <!--Grid column-->
-                          <div class="col-md-12">
-                            <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-bold"> Log in</a></p>
-                          </div>
-   <!--Grid column-->
+
 
             </div>
       </div>
-<!--/Form without header-->
+
 
         </section>
-<!--Section: Live preview-->
+
                 </div>
             </div>
         </div>
