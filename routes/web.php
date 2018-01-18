@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,9 +23,7 @@ Route::get('/',function(){
 
 //creacion de pdf //
 
-Route::get('pdf1', 'Articulos\Llenar@index')->name('vista');
-
-Route::get('descargar', 'Articulos\Llenar@pdf')->name('vista.pdf');
+Route::get('send','MailController@send');
 
 
 
