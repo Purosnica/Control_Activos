@@ -11,18 +11,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:600,800&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
 
     <!-- Bootstrap Core Css -->
     <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 <!-- Bootstrap material design mdb-->
-
-<link href="css/nemecio/css/mdb.css" rel="stylesheet">
-<link href="css/nemecio/css/style.css" rel="stylesheet">
-
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/themes/all-themes.css" rel="stylesheet" />
+    <link href="css/nemecio/css/mdb.css" rel="stylesheet">
+    <link href="css/nemecio/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
 </head>
-<body  >
+<body >
     <div class="overlay"></div>
     <!-- Top Bar -->
     <nav style="background-color:#48476E;" class="navbar">
@@ -37,8 +36,7 @@
 
                     <li class="dropdown">
                         <a href="{{ route('logout') }}" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <i class="material-icons">supervisor_account</i>  </a>
-
+                            <i class="material-icons">supervisor_account</i> </a>
                         </ul>
                     </li>
                   </ul>
@@ -220,6 +218,7 @@
     </section>
 
     <!-- Jquery Core Js -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
       <script src="{{ asset('js/app.js') }}"></script>
     <script src="plugins/jquery/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.js"></script>
@@ -228,6 +227,12 @@
     <script src="css/nemecio/js/jquery-3.2.1.min.js">  </script>
     <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
     <script src="js/admin.js"></script>
+
+
+      <script> $(document).ready(function(){
+    $('#myTable').DataTable();
+});
+</script>
 
 </body>
 

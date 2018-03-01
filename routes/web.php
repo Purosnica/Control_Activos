@@ -17,11 +17,12 @@
 
 //ruta de inicio de session
 Route::get('/',function(){
-  return view ('welcome');
+  $Users= App\User::all();
+  return view ('welcome', compact('Users'));
 });
 
 
-//creacion de pdf //
+//creacion de pdf //S
 
 Route::get('send','MailController@send');
 

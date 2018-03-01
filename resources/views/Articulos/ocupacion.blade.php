@@ -1,3 +1,4 @@
+
 @extends('dependencias_blade.general')
 
 @section('general')
@@ -92,7 +93,7 @@
             </div>
   </div>
 
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="myTable">
     <thead class="thead-inverse">
       <tr>
         <th>#</th>
